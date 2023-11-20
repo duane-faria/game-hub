@@ -34,7 +34,7 @@ export default function PlatformList({ platforms }: PlatformListProps) {
   return (
     <HStack marginY={1}>
       {platforms.map(({ slug }) => {
-        return <Icon as={iconMap[slug]} color="gray.500"/>;
+        return <Icon key={slug} as={iconMap[slug]} color="gray.500"/>;
       })}
     </HStack>
   );

@@ -1,4 +1,5 @@
 import { Box, Text, VStack } from '@chakra-ui/react'
+import GenreList from './GenreList'
 
 export default function Aside() {
   return (
@@ -6,18 +7,7 @@ export default function Aside() {
       <Text fontWeight={600} fontSize='24px'>
         Genres
       </Text>
-      <Box>
-        random
-      </Box>
-      <Box>
-        random
-      </Box>
-      <Box>
-        random
-      </Box>
-      <Box>
-        random
-      </Box>
+      <GenreList />
     </VStack>
   )
 }
